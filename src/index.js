@@ -4,7 +4,7 @@ let timer;
 let lastHole = 0;
 let points = 0;
 let difficulty = '';
-const song = new Audio("https://github.com/WWWard93/js-dev-final-capstone-starter-whack-a-mole-main/blob/0de7fb5f7f3c85d8345193315bbac7b55cfd0cd8/assets/mtfc.mp3");
+const song = new Audio("https://on.soundcloud.com/P5sMC");
 
 // DOM Elements
 const holes = document.querySelectorAll('.hole');
