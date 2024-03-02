@@ -4,7 +4,7 @@ let timer;
 let lastHole = 0;
 let points = 0;
 let difficulty = '';
-const song = new Audio("../assets/mtfc.mp3");
+const song = new Audio("https://github.com/WWWard93/js-dev-final-capstone-starter-whack-a-mole-main/blob/0de7fb5f7f3c85d8345193315bbac7b55cfd0cd8/assets/mtfc.mp3");
 
 // DOM Elements
 const holes = document.querySelectorAll('.hole');
@@ -101,7 +101,7 @@ function startTimer() {
 }
 
 function hitSound() {
-  const audio = new Audio("../assets/grunt.mp3"); 
+  const audio = new Audio("https://github.com/WWWard93/js-dev-final-capstone-starter-whack-a-mole-main/blob/0de7fb5f7f3c85d8345193315bbac7b55cfd0cd8/assets/grunt.mp3"); 
   audio.play();
 }
 
