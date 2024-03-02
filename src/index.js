@@ -78,7 +78,7 @@ function showUp() {
 function updateScore() {
   points++;
   score.textContent = points;
-  return points;
+  return points;  
 }
 
 function clearScore() {
@@ -91,14 +91,13 @@ function updateTimer() {
   if (time > 0) {
     time -= 1;
     timerDisplay.textContent = time;
-  } else {
-    stopGame();
   }
+  return time;
 }
 
 function startTimer() {
+  updateTimer(); // Update timer immediately
   timer = setInterval(updateTimer, 1000);
-  return timer;
 }
 
 function hitSound() {
@@ -130,10 +129,9 @@ function startGame() {
   points = 0;
   clearScore();
   startTimer();
-  updateTimer();
   setEventListeners();
   menuHide(); 
-  setDelay();
+  setDelay(difficulty);
   return "game started";
 }
 
@@ -175,10 +173,13 @@ function menuShow() {
   } 
 
 // Mole whacking function, sound and point registry
-function whack() {
+function whack(event) {
   hitSound(); 
-  updateScore(); 
+  const updatedScore = updateScore(); 
+  return updatedScore;
 }
+
+
 
 // Exports for Testing
 window.randomInteger = randomInteger;

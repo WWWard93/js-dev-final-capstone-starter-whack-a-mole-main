@@ -305,3 +305,4 @@ describe("US-05: startTimer() and updateTimer()", () => {
     expect(startGame).toContain("startTimer()");
   });
 });
+

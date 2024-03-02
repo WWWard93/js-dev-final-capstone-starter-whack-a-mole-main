@@ -1,5 +1,5 @@
 html {
-    background: url('../assets/background.png') no-repeat center center fixed;
+    background: url('/background.f2f908d8.png') no-repeat center center fixed;
     box-sizing: border-box;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -42,7 +42,7 @@ html {
     display: flex;
     flex-wrap: wrap;
     margin: 0 auto;
-    cursor: url('../assets/mallet.png'), auto;}
+    cursor: url('/mallet.697317d7.png'), auto;}
   
   button {
     margin: auto;
@@ -82,7 +82,7 @@ html {
   
   .hole:after {
     display: block;
-    background: url("../assets/hole.png") bottom center no-repeat;
+    background: url("/hole.c4441cf4.png") bottom center no-repeat;
     background-size:contain;
     content:'';
     width: 100%;
@@ -94,7 +94,7 @@ html {
   }
   
   .mole {
-    background:url('../assets/mole.png') bottom center no-repeat;
+    background:url('/mole.1bc201e5.png') bottom center no-repeat;
     background-size: 40%;
     position: absolute;
     top: 100%;
@@ -109,3 +109,5 @@ html {
     top: 0;
     transform: scale(1.1);
   }
+
+/*# sourceMappingURL=/styles.dd855970.css.map */
